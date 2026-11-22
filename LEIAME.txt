@@ -1,0 +1,22 @@
+DRONE VR - tela do PC dentro do VR Box (iPhone)
+
+1) COMPILAR O IPA
+   - Suba o conteudo desta pasta (project.yml, DroneVR/, .github/, PC/) num repositorio do GitHub.
+     (a pasta oculta .github precisa ir junto)
+   - Aba Actions > "Build IPA" > aguarde > baixe o artefato "DroneVR-ipa".
+   - Instale o DroneVR.ipa no iPhone com o Sideloadly.
+
+2) NO PC (uma vez): rode PC/instalar.bat   (precisa de Python)
+
+3) USAR
+   - Abra o app Drone VR no iPhone (aceite "Rede local"). Ele mostra o IP.
+   - No PC rode PC/iniciar.bat e digite o IP.
+   - Ajuste zoom/lente no menu (aparece uma grade de teste), toque "Entrar no modo VR",
+     coloque o celular no VR Box. Toque com 2 dedos para voltar ao menu.
+   - Deixe o Roblox em janela ou tela cheia sem bordas (borderless).
+
+MENOR ATRASO
+   - PC no cabo de rede e iPhone no Wi-Fi 5 GHz do mesmo roteador, ou
+   - Melhor ainda: cabo USB + Ponto de Acesso Pessoal no iPhone (precisa do iTunes/Apple Devices
+     no Windows). O IP do iPhone nesse caso aparece no app (geralmente 172.20.10.1).
+   - Se engasgar: --width 960 --height 540 --quality 60

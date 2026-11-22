@@ -1,0 +1,31 @@
+name: DroneVR
+options:
+  bundleIdPrefix: com.dronevr
+  deploymentTarget:
+    iOS: "15.0"
+targets:
+  DroneVR:
+    type: application
+    platform: iOS
+    sources:
+      - DroneVR
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.dronevr.app
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+    info:
+      path: DroneVR/Info.plist
+      properties:
+        CFBundleDisplayName: Drone VR
+        UILaunchScreen: {}
+        UIRequiresFullScreen: true
+        UIStatusBarHidden: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        NSLocalNetworkUsageDescription: "Recebe a tela do PC pela rede local."
+        NSBonjourServices:
+          - _dronevr._tcp
